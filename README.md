@@ -51,7 +51,7 @@ cd myProjectName
 
     export default MiComponente
     ```
-    - React Functional Component (using `rfce`)
+  - React Functional Component (using `rfce`)
     ```JSX
     import React from 'react'
 
