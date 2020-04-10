@@ -41,19 +41,25 @@ class App extends Component {
         <IonReactRouter>
           <IonTabs>
             <IonRouterOutlet>
-              <Route path="/tab1" exact={true} render={() => <MiComponente titulo={'Hola'} nombre={'David'} />} />
-              <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+              <Route
+                path="/tab1"
+                exact
+                render={() => {
+                  return <MiComponente titulo={'Hola'} nombre={'David'} />
+                  }}
+              />
+              <Route path="/" exact render={() => <Redirect to="/tab1" />} />
             </IonRouterOutlet>
             <IonTabBar slot="bottom">
               <IonTabButton tab="tab1" href="/tab1">
                 <IonIcon icon={bluetooth} />
                 <IonLabel>Tab 1</IonLabel>
               </IonTabButton>
-              <IonTabButton tab="tab2" href="/tab2">
+              <IonTabButton tab="tab2" href="#">
                 <IonIcon icon={ellipse} />
                 <IonLabel>Tab 2</IonLabel>
               </IonTabButton>
-              <IonTabButton tab="tab3" href="/tab3">
+              <IonTabButton tab="tab3" href="#">
                 <IonIcon icon={square} />
                 <IonLabel>Tab 3</IonLabel>
               </IonTabButton>
